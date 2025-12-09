@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KMS Consulting - AI-Enhanced Process Improvement. Transform your business operations with intelligent automation and strategic process optimization.">
+    <title>KMS Consulting | AI-Enhanced Process Improvement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%230ea5e9'/%3E%3Cstop offset='100%25' style='stop-color:%236366f1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='65' font-family='Arial' font-size='45' font-weight='bold' fill='white' text-anchor='middle'%3EKMS%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
+                        <path d="M10 28V12h3v6.5l5-6.5h4l-5.5 6.5L22 28h-4l-4-7-1 1.2V28h-3z" fill="white"/>
+                        <defs>
+                            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0ea5e9"/>
+                                <stop offset="1" stop-color="#6366f1"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">KMS Consulting</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </span>
+                AI-Powered Process Excellence
+            </div>
+            <h1 class="hero-title">
+                Transform Your Operations with
+                <span class="gradient-text">Intelligent Process Improvement</span>
+            </h1>
+            <p class="hero-subtitle">
+                We combine 60+ years of enterprise expertise with cutting-edge AI to streamline operations,
+                reduce costs, and drive measurable business outcomes for organizations ready to lead.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    Schedule Consultation
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    Explore Services
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">60+</span>
+                    <span class="stat-label">Years Combined Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">$2B+</span>
+                    <span class="stat-label">Enterprise Value Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Processes Optimized</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="Team collaborating on digital transformation"
+                     loading="eager">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="floating-card card-1">
+                <div class="card-icon success">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Process Automated</span>
+                    <span class="card-value">87% Efficiency Gain</span>
+                </div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon primary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">AI Integration</span>
+                    <span class="card-value">Real-time Analytics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-label">Trusted by leaders from industry giants</p>
+            <div class="trusted-logos">
+                <div class="logo-item">
+                    <svg viewBox="0 0 120 40" fill="currentColor">
+                        <text x="10" y="28" font-family="Inter" font-size="18" font-weight="700">GE Vernova</text>
+                    </svg>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 120 40" fill="currentColor">
+                        <text x="10" y="28" font-family="Inter" font-size="18" font-weight="700">GE Power</text>
+                    </svg>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 150 40" fill="currentColor">
+                        <text x="10" y="28" font-family="Inter" font-size="18" font-weight="700">Pratt & Whitney</text>
+                    </svg>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 140 40" fill="currentColor">
+                        <text x="10" y="28" font-family="Inter" font-size="18" font-weight="700">Alstom Power</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2 class="section-title">Comprehensive Solutions for <span class="gradient-text">Modern Enterprises</span></h2>
+                <p class="section-subtitle">
+                    We deliver end-to-end process transformation services that leverage AI and automation
+                    to create sustainable competitive advantages.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
+                            <path d="M16 14H8a4 4 0 0 0-4 4v2h16v-2a4 4 0 0 0-4-4z"/>
+                            <circle cx="12" cy="6" r="1"/>
+                            <path d="M9 11l3 3 3-3"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">AI-Enhanced Process Optimization</h3>
+                    <p class="service-description">
+                        Deploy intelligent automation that learns from your operations, identifies bottlenecks,
+                        and continuously improves workflows to maximize efficiency and reduce manual effort.
+                    </p>
+                    <ul class="service-features">
+                        <li>Machine learning-driven process analysis</li>
+                        <li>Predictive workflow optimization</li>
+                        <li>Intelligent task automation</li>
+                        <li>Real-time performance monitoring</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 21V9"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Digital Transformation Strategy</h3>
+                    <p class="service-description">
+                        Comprehensive roadmaps that align technology investments with business objectives,
+                        ensuring sustainable digital evolution across your organization.
+                    </p>
+                    <ul class="service-features">
+                        <li>Technology stack assessment</li>
+                        <li>Integration architecture design</li>
+                        <li>Change management planning</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Legacy System Modernization</h3>
+                    <p class="service-description">
+                        Seamlessly transition from outdated systems to modern, cloud-native platforms
+                        while preserving critical business logic and minimizing operational disruption.
+                    </p>
+                    <ul class="service-features">
+                        <li>Cloud migration strategies</li>
+                        <li>API-first architecture</li>
+                        <li>Data preservation & migration</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Enterprise Data Analytics</h3>
+                    <p class="service-description">
+                        Transform raw data into actionable intelligence with advanced analytics platforms
+                        that enable data-driven decision-making at every level of your organization.
+                    </p>
+                    <ul class="service-features">
+                        <li>Business intelligence dashboards</li>
+                        <li>Predictive analytics models</li>
+                        <li>Data governance frameworks</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Cybersecurity & Compliance</h3>
+                    <p class="service-description">
+                        Implement robust security frameworks and compliance programs that protect
+                        your digital assets while meeting regulatory requirements.
+                    </p>
+                    <ul class="service-features">
+                        <li>Security architecture review</li>
+                        <li>Risk assessment & mitigation</li>
+                        <li>Compliance program development</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Agile Delivery & Coaching</h3>
+                    <p class="service-description">
+                        Accelerate project delivery with proven agile methodologies and expert coaching
+                        that empowers your teams to deliver value faster and more consistently.
+                    </p>
+                    <ul class="service-features">
+                        <li>Agile transformation programs</li>
+                        <li>Scrum & Kanban implementation</li>
+                        <li>Team performance optimization</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-badge">About KMS Consulting</span>
+                    <h2 class="section-title">Where Deep Expertise Meets <span class="gradient-text">Innovative Technology</span></h2>
+                    <p class="about-lead">
+                        KMS Consulting was founded by three industry veterans who share a common vision:
+                        to help organizations unlock their full potential through intelligent process improvement
+                        and thoughtful technology integration.
+                    </p>
+                    <p class="about-description">
+                        With combined experience spanning over six decades at Fortune 500 companies like GE,
+                        Pratt & Whitney, and Alstom, our team brings unparalleled expertise in enterprise
+                        transformation, IT strategy, and operational excellence.
+                    </p>
+                    <p class="about-description">
+                        We believe that the best solutions come from understanding both the technology and
+                        the people who use it. That's why we take a human-centered approach to AI implementation,
+                        ensuring that automation enhances rather than replaces human expertise.
+                    </p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h4>Results-Driven</h4>
+                                <p>We measure success by the tangible outcomes we deliver for our clients.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h4>Collaborative</h4>
+                                <p>We work alongside your teams, transferring knowledge and building capability.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h4>Excellence</h4>
+                                <p>We bring Six Sigma discipline and best practices to every engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-stack">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                             alt="Strategic planning session"
+                             class="stack-image-1">
+                        <img src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                             alt="Data analytics dashboard"
+                             class="stack-image-2">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">60+</span>
+                        <span class="exp-text">Years Combined<br>Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Approach</span>
+                <h2 class="section-title">A Proven Framework for <span class="gradient-text">Sustainable Transformation</span></h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discover & Assess</h3>
+                        <p>We conduct a comprehensive analysis of your current processes, technology stack, and organizational goals to identify opportunities for improvement.</p>
+                    </div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                            <path d="M11 8v6M8 11h6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Design & Strategize</h3>
+                        <p>We develop a tailored transformation roadmap with clear milestones, risk mitigation strategies, and measurable success criteria.</p>
+                    </div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Implement & Integrate</h3>
+                        <p>Our experts work alongside your teams to deploy solutions, integrate AI capabilities, and ensure seamless adoption across the organization.</p>
+                    </div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Optimize & Scale</h3>
+                        <p>We continuously monitor performance, refine processes, and scale successful initiatives to maximize ROI and drive lasting organizational change.</p>
+                    </div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M23 6l-9.5 9.5-5-5L1 18"/>
+                            <polyline points="17 6 23 6 23 12"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Leadership Team</span>
+                <h2 class="section-title">Meet the Experts Behind <span class="gradient-text">Your Transformation</span></h2>
+                <p class="section-subtitle">
+                    Our founding team brings decades of hands-on experience from the world's leading
+                    industrial and technology companies.
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80"
+                             alt="Ken Turner - Managing Partner">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="https://www.linkedin.com/in/kennethrturner" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="mailto:kturner@kenturnerportfolio.com" aria-label="Email">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Ken Turner</h3>
+                        <span class="team-role">Managing Partner, Product Strategy</span>
+                        <p class="team-bio">
+                            PMP-certified Technical Product Manager with 20+ years of experience helping
+                            midsize and large organizations resolve siloed processes and tools. Former
+                            leader at GE Vernova, GE Power, Pratt & Whitney, and Alstom Power.
+                        </p>
+                        <div class="team-tags">
+                            <span class="tag">Product Management</span>
+                            <span class="tag">Digital Transformation</span>
+                            <span class="tag">AI Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80"
+                             alt="Matt St. Jarre - Managing Partner">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="https://www.linkedin.com/in/mattstjarre" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#contact" aria-label="Email">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Matt St. Jarre</h3>
+                        <span class="team-role">Managing Partner, Operations</span>
+                        <p class="team-bio">
+                            Seasoned enterprise technology leader with extensive experience in process
+                            optimization and operational excellence at Fortune 500 companies. Expert in
+                            driving large-scale transformation initiatives and building high-performance teams.
+                        </p>
+                        <div class="team-tags">
+                            <span class="tag">Operations Excellence</span>
+                            <span class="tag">Process Improvement</span>
+                            <span class="tag">Team Leadership</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80"
+                             alt="Saji Nair - Managing Partner">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="https://www.linkedin.com/in/sajinair001" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#contact" aria-label="Email">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Saji Nair</h3>
+                        <span class="team-role">Managing Partner, Technology & Security</span>
+                        <p class="team-bio">
+                            Strategic IT and Cybersecurity Leader with 22+ years of global experience.
+                            Six Sigma Black Belt certified with deep expertise in enterprise security
+                            architecture and risk management at GE Vernova.
+                        </p>
+                        <div class="team-tags">
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">Six Sigma Black Belt</span>
+                            <span class="tag">IT Strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Client Success</span>
+                <h2 class="section-title">Trusted by Industry <span class="gradient-text">Leaders</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "The team's deep understanding of enterprise processes combined with their AI expertise
+                        delivered results that exceeded our expectations. We saw a 40% reduction in processing
+                        time within the first quarter."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">VP</div>
+                        <div class="author-info">
+                            <span class="author-name">VP of Operations</span>
+                            <span class="author-title">Fortune 500 Energy Company</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Their strategic approach to legacy system modernization was exactly what we needed.
+                        They understood our constraints and delivered a phased roadmap that minimized risk
+                        while maximizing value."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CTO</div>
+                        <div class="author-info">
+                            <span class="author-name">Chief Technology Officer</span>
+                            <span class="author-title">Industrial Manufacturing Leader</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "What sets KMS apart is their ability to translate complex technical solutions into
+                        clear business outcomes. The security framework they implemented has become a model
+                        for our entire organization."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CISO</div>
+                        <div class="author-info">
+                            <span class="author-name">Chief Information Security Officer</span>
+                            <span class="author-title">Global Technology Firm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Operations?</h2>
+                <p class="cta-text">
+                    Let's discuss how AI-enhanced process improvement can drive measurable results for your organization.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        Schedule a Consultation
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:info@kmsconsulting.ai" class="btn btn-outline btn-large">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-badge">Get In Touch</span>
+                    <h2 class="section-title">Let's Start Your <span class="gradient-text">Transformation Journey</span></h2>
+                    <p class="contact-description">
+                        Ready to explore how AI-enhanced process improvement can benefit your organization?
+                        We'd love to hear about your challenges and discuss potential solutions.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Email Us</span>
+                                <a href="mailto:info@kmsconsulting.ai" class="method-value">info@kmsconsulting.ai</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Connecticut, United States</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Schedule a Call</span>
+                                <span class="method-value">Book a 30-min discovery session</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/kmsconsulting" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Work Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Company Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Area of Interest</label>
+                            <select id="interest" name="interest">
+                                <option value="">Select a service area</option>
+                                <option value="ai-optimization">AI-Enhanced Process Optimization</option>
+                                <option value="digital-transformation">Digital Transformation Strategy</option>
+                                <option value="legacy-modernization">Legacy System Modernization</option>
+                                <option value="data-analytics">Enterprise Data Analytics</option>
+                                <option value="cybersecurity">Cybersecurity & Compliance</option>
+                                <option value="agile">Agile Delivery & Coaching</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Tell Us About Your Challenge</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Describe your current challenges or goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="8" fill="url(#footer-logo-gradient)"/>
+                                <path d="M10 28V12h3v6.5l5-6.5h4l-5.5 6.5L22 28h-4l-4-7-1 1.2V28h-3z" fill="white"/>
+                                <defs>
+                                    <linearGradient id="footer-logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#0ea5e9"/>
+                                        <stop offset="1" stop-color="#6366f1"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="logo-text">KMS Consulting</span>
+                    </a>
+                    <p class="footer-tagline">AI-Enhanced Process Improvement</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">AI Process Optimization</a></li>
+                            <li><a href="#services">Digital Transformation</a></li>
+                            <li><a href="#services">Legacy Modernization</a></li>
+                            <li><a href="#services">Data Analytics</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/company/kmsconsulting" target="_blank" rel="noopener">LinkedIn</a></li>
+                            <li><a href="mailto:info@kmsconsulting.ai">Email Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KMS Consulting. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
