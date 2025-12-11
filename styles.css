@@ -373,8 +373,24 @@ h4 { font-size: 1.125rem; }
    Hero Section
    ============================================ */
 
+.hero-wrapper {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background: var(--color-white);
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
 .hero {
     position: relative;
+    z-index: 1;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -383,14 +399,6 @@ h4 { font-size: 1.125rem; }
     padding: calc(80px + var(--spacing-3xl)) var(--container-padding) var(--spacing-3xl);
     max-width: var(--container-max);
     margin: 0 auto;
-    overflow: hidden;
-}
-
-.hero-bg {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    overflow: hidden;
 }
 
 .hero-gradient {
@@ -1510,10 +1518,16 @@ a.method-value:hover {
    ============================================ */
 
 @media (max-width: 1024px) {
+    .hero-wrapper {
+        min-height: auto;
+    }
+
     .hero {
         grid-template-columns: 1fr;
         gap: var(--spacing-2xl);
         padding-top: calc(80px + var(--spacing-2xl));
+        min-height: auto;
+        padding-bottom: var(--spacing-2xl);
     }
 
     .hero-content {
@@ -1527,6 +1541,7 @@ a.method-value:hover {
 
     .hero-cta {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .hero-stats {
@@ -1534,8 +1549,13 @@ a.method-value:hover {
     }
 
     .hero-image {
-        max-width: 600px;
+        max-width: 100%;
         margin: 0 auto;
+        padding: 0;
+    }
+
+    .hero-image-wrapper {
+        margin: 0;
     }
 
     .floating-card.card-1 {
@@ -1629,7 +1649,31 @@ a.method-value:hover {
 
 @media (max-width: 768px) {
     :root {
-        --container-padding: 1.25rem;
+        --container-padding: 1rem;
+    }
+
+    /* Hero mobile fixes */
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero-image-wrapper {
+        border-radius: var(--radius-xl);
+        margin: 0 auto;
+        max-width: 100%;
     }
 
     /* Mobile Navigation - Enhanced */
@@ -1824,18 +1868,27 @@ a.method-value:hover {
     h2 { font-size: 1.5rem; }
     h3 { font-size: 1.125rem; }
 
+    .hero {
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+    }
+
     .hero-title {
-        font-size: 1.75rem;
-        line-height: 1.2;
+        font-size: 1.5rem;
+        line-height: 1.25;
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.9375rem;
     }
 
     .hero-badge {
         font-size: 0.75rem;
         padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .hero-image-wrapper {
+        min-height: 250px;
     }
 
     .section-badge {
