@@ -31,30 +31,48 @@ function initNavigation() {
     const navbar = document.getElementById('navbar');
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
+    const navBackdrop = document.getElementById('nav-backdrop');
+
+    // Helper function to close menu
+    function closeMenu() {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        if (navBackdrop) navBackdrop.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Helper function to open menu
+    function openMenu() {
+        navToggle.classList.add('active');
+        navMenu.classList.add('active');
+        if (navBackdrop) navBackdrop.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
 
     // Mobile menu toggle
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', () => {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+            if (navMenu.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
         });
 
         // Close menu when clicking a link
         navMenu.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('active');
-                document.body.style.overflow = '';
-            });
+            link.addEventListener('click', closeMenu);
         });
+
+        // Close menu when clicking backdrop
+        if (navBackdrop) {
+            navBackdrop.addEventListener('click', closeMenu);
+        }
 
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('active');
-                document.body.style.overflow = '';
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && navMenu.classList.contains('active')) {
+                closeMenu();
             }
         });
     }
