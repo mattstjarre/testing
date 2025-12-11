@@ -3,7 +3,9 @@ node_modules/
 
 # Test artifacts
 screenshot-*.png
+review-*.png
 test-*.js
+review-*.js
 
 # Package files (if not needed)
 package.json

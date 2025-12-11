@@ -10,7 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initContactForm();
     initNavHighlight();
+    initDynamicYear();
 });
+
+/**
+ * Dynamic Year - Updates copyright year automatically
+ */
+function initDynamicYear() {
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+}
 
 /**
  * Navigation Module
