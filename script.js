@@ -108,6 +108,9 @@ function initScrollAnimations() {
     document.querySelectorAll('[data-animate]').forEach(el => {
         observer.observe(el);
     });
+
+    // Mark JS as loaded for progressive enhancement
+    document.documentElement.classList.add('js-loaded');
 }
 
 /**
