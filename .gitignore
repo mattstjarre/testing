@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Test artifacts
+screenshot-*.png
+test-*.js
+
+# Package files (if not needed)
+package.json
+package-lock.json
